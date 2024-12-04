@@ -18,21 +18,21 @@ const SearchProduct: React.FC = () => {
             <div className="w-[150px] flex flex-col">
               <p className="font-supermarket text-xl text-white">หน้ายาง</p>
               <p className="text-xs text-white">ความกว้าง (มม.)</p>
-              <select className="text-xs">
+              <select className="text-xs border border-primary">
                 <option>--เลือกหน้ายาง--</option>
               </select>
             </div>
             <div className="w-[150px] flex flex-col">
               <p className="font-supermarket text-xl text-white">ซีรี่ย์</p>
               <p className="text-xs text-white">อัตราส่วนความสูงแก้มยาง (%)</p>
-              <select className="text-xs">
+              <select className="text-xs border border-primary">
                 <option>--เลือกซีรีย์--</option>
               </select>
             </div>
             <div className="w-[150px] flex flex-col">
               <p className="font-supermarket text-xl text-white">กระทะล้อ</p>
               <p className="text-xs text-white">เส้นผ่าศูนย์กลาง (นิ้ว)</p>
-              <select className="text-xs">
+              <select className="text-xs border border-primary">
                 <option>--เลือกกระทะล้อ--</option>
               </select>
             </div>
@@ -42,7 +42,7 @@ const SearchProduct: React.FC = () => {
               width={100}
               height={20}
               unoptimized
-              className="mx-auto my-3"
+              className="mx-auto my-3 cursor-pointer"
             />
           </div>
         </div>

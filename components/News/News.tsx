@@ -32,7 +32,7 @@ const News: React.FC = () => {
   return (
     <>
       <div className="w-full border-t border-r border-b-4 border-l border-primary">
-        <div className="h-8 flex justify-between px-2 border-b border-primary">
+        <div className="flex justify-between px-2 border-b border-primary">
           <p className="font-supermarket text-xl">News & Events</p>
           <div className="flex items-center gap-x-1">
             <Image
@@ -79,7 +79,7 @@ const News: React.FC = () => {
                 </div>
               </div>
 
-              <p className="text-sm line-clamp-3 group-hover:underline transition-all duration-300 ease-in-out">
+              <p className="text-sm line-clamp-3 cursor-pointer group-hover:underline transition-all duration-300 ease-in-out">
                 {news.content}
               </p>
             </div>
