@@ -4,22 +4,22 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
-    title: "Home S-One",
-    description: "S-One",
+  title: "Home S-One",
+  description: "S-One",
 };
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-    return (
-        <html lang="en">
-            <body className={`max-w-[1280px] mx-auto h-dvh p-2`}>
-                <Navbar />
-                {children}
-                <Footer />
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en">
+      <body className={`max-w-[1280px] mx-auto h-dvh p-2`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
