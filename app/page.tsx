@@ -6,18 +6,18 @@ import SearchBranch from "@/components/SearchBranch/SearchBranch";
 import SearchProduct from "@/components/SearchProduct/SearchProduct";
 
 export default function Home() {
-  return (
-    <div>
-      <div className="grid grid-cols-[280px_1fr_1fr] gap-x-4 py-3">
-        <SearchProduct />
-        <BannerSlide />
-      </div>
-      <Category />
-      <div className="grid grid-cols-[280px_1fr_280px] gap-x-4 py-3">
-        <SearchBranch />
-        <News />
-        <RegisterNews />
-      </div>
-    </div>
-  );
+    return (
+        <div>
+            <div className="grid grid-cols-[280px_1fr_1fr] gap-x-4 py-3">
+                <SearchProduct />
+                <BannerSlide />
+            </div>
+            <Category />
+            <div className="grid grid-cols-3 gap-4 py-3  md:grid-cols-[280px_1fr_280px]">
+                <SearchBranch />
+                <News />
+                <RegisterNews />
+            </div>
+        </div>
+    );
 }
